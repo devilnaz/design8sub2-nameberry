@@ -1,0 +1,68 @@
+.design9 {
+    .popular-names {
+        display: flex;
+        flex-direction: column;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        &__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 18px 16px 14px 20px;
+            border-bottom: 1px solid #cecece;
+            &-wrap {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                @include media('sm') {
+                    gap: 10px;
+                }
+            }
+            &-name {
+                display: flex;
+                align-items: flex-end;
+                gap: 8px;
+                .count {
+                    font-family: var(--four-family);
+                    font-weight: 350;
+                    font-size: 12px;
+                    color: #7c7c7c;
+                    display: inline-block;
+                    padding-bottom: 3px;
+                }
+                .name {
+                    font-family: var(--four-family);
+                    font-weight: 350;
+                    font-size: 20px;
+                    color: #333;
+                }
+            }
+            &-heart {
+                display: flex;
+                flex-shrink: 0;
+            }
+            @include media('sm') {
+                padding: 18px 10px 14px 10px;
+            }
+        }
+        &__more {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 16px;
+            padding: 18px 16px 14px 20px;
+            font-family: var(--four-family);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 133%;
+            letter-spacing: 0.2em;
+            color: #333;
+            min-height: 56px;
+            box-sizing: border-box;
+        }
+    }
+}

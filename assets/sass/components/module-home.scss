@@ -1,0 +1,35 @@
+.design9 {
+  .module-home {
+    padding-top: 36px;
+    padding-bottom: 39px;
+    &__title {
+      font-family: var(--font-family);
+      font-weight: 400;
+      font-size: 56px;
+      line-height: 114%;
+      color: var(--color-title);
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      margin-bottom: 29px;
+      gap: 20px;
+      .share, .copy {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 32px;
+        letter-spacing: 0.2em;
+        color: #7c7c7c;
+      }
+      .copy {
+        font-weight: 300;
+      }
+      .links {
+        display: flex;
+        gap: 16px;
+        list-style-type: none;
+      }
+    }
+  }
+}

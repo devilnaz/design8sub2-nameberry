@@ -1,0 +1,46 @@
+// mixins
+@import 'media'
+@import 'vendors/_font-face'
+// fonts
+@import 'fonts/fjallaone'
+@import 'fonts/slatepro'
+@import 'fonts/opensans-condensed'
+@import 'fonts/crimson-text'
+// others
+@import 'variables'
+
+// shared components
+@import 'components/module-title'
+@import 'components/decorative-line'
+@import 'components/module-image'
+@import 'components/module-message'
+@import 'components/button'
+@import 'components/popular-names'
+
+@import 'components/header'
+@import 'components/module-home'
+@import 'components/module1'
+@import 'components/module2'
+
+.design9
+  .main-structure
+    background-color: var(--bg-color)
+    padding-bottom: 20px
+    &__column_center
+      max-width: calc(var(--main-width) + var(--gap-main) * 2)
+      margin: 0 auto
+    
+  .outer-gap-elem
+    padding: var(--gap-main)
+    @include media('md')
+      padding: var(--gap-main-mobile)
+    &_header
+      padding-top: 0
+      @include media('md')
+        padding-top: 0
+
+  .small-block
+    max-width: 700px
+    width: 100%
+    margin: 0 auto
+

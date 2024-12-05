@@ -1,0 +1,17 @@
+.design9 {
+  .module2 {
+    padding-top: 45px;
+    &__title {
+      margin-bottom: 2px;
+    }
+    &__image {
+      margin-bottom: 44px;
+      max-height: 365px;
+      height: 100%;
+    }
+    &__message {
+      margin-bottom: 53px;
+      letter-spacing: -0.02em;
+    }
+  }
+}

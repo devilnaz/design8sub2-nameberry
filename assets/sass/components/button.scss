@@ -1,0 +1,17 @@
+.design9 {
+    .button {
+        border: 1px solid #d84444;
+        border-radius: 4px;
+        width: 100%;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        color: #d84444;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+}
